@@ -1,0 +1,13 @@
+html,
+body {
+	background-color: whitesmoke;
+	color: darkslategray;
+	font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+body > * {
+	margin-inline: 5vw;
+}
