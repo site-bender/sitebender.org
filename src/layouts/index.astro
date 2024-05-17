@@ -28,6 +28,73 @@ const { title } = Astro.props
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<header class="logo">
+			<span id="site">site</span><span id="bender">bender</span>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://fp.sitebender.org/">
+						<ruby>
+							<span>FP</span>
+							<rt title="production-ready">1.0</rt>
+						</ruby></a
+					>
+				</li>
+				<li>
+					<a href="https://operations.sitebender.org/">
+						<ruby>
+							<span>Operations</span>
+							<rt title="alpha code">&alpha;</rt>
+						</ruby></a
+					>
+				</li>
+				<li>
+					<a href="https://renderer.sitebender.org/">
+						<ruby>
+							<span>Renderer</span>
+							<rt title="beta code">&beta;</rt>
+						</ruby></a
+					>
+				</li>
+				<li>
+					<a href="https://pubsub.sitebender.org/">
+						<ruby>
+							<span>PubSub</span>
+							<rt title="alpha code">&alpha;</rt>
+						</ruby></a
+					>
+				</li>
+				<li>
+					<a href="https://builder.sitebender.org/">
+						<ruby>
+							<span>Builder</span>
+							<rt title="alpha code">&alpha;</rt>
+						</ruby>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<slot />
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="/who"> <ruby><span>Who</span><rt>?</rt></ruby></a>
+					</li>
+					<li>
+						<a href="/what"> <ruby><span>What</span><rt>?</rt></ruby></a>
+					</li>
+					<li>
+						<a href="/why"> <ruby><span>Why</span><rt>?</rt></ruby></a>
+					</li>
+					<li>
+						<a href="/legal"> <ruby><span>Legal</span><rt>!!</rt></ruby></a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>

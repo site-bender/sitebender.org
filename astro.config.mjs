@@ -6,6 +6,9 @@ const ignore = []
 
 // ignore unused exports
 export default defineConfig({
+	devToolbar: {
+		enabled: false,
+	},
 	integrations: [
 		sitemap({
 			canonicalURL: "https://sitebender.org/",
